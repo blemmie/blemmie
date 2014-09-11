@@ -4,11 +4,17 @@ title: Home
 weight: 1
 ---
 <section class="home intro">
-  <p>Blemmie, Blemmyes (Βλέμυες; Blemmyae) people said to have no head, their eyes and mouth being placed in the breast. (See ACEPHALITES; CAORA.)</p>
+  <p>Blemmie, Blemmyes (Βλέμυες; Blemmyae) people said to have no head, their eyes and mouth being placed in the breast. <span>(See ACEPHALITES; CAORA.)</span></p>
 </section>
-<section class="home posts">
-  <h1>Blog Posts</h1>
-  {% for post in site.posts %}
+<section class="home posts works">
+  <h1>Latest work</h1>
+  {% for post in site.categories['works'] %}
+    <article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
+  {% endfor %}
+</section>
+<section class="home posts blog">
+  <h1>Latest Posts</h1>
+  {% for post in site.categories['blog'] %}
     <article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
   {% endfor %}
 </section>

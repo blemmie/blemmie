@@ -24,7 +24,7 @@
 //   }
 
 // RWD Breakpoints
-@mixin breakpoint($point, $query: max-width) {
+@mixin breakpoint($point, $query: min-width) {
   @media ($query: $point)  {
     @content;
   }

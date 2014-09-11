@@ -113,11 +113,6 @@ font-family: 'Titillium Web', sans-serif;
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 
 /* Typo */
 body {
@@ -126,22 +121,66 @@ body {
 }
 
 p {
-    //font-family: 'Titillium Web', sans-serif;
-    //font-weight: 300;   
+    font-size: .85em;
+    @include breakpoint($bp-small){
+        font-size: 1em;
+    }
+}
+
+a {
+    transition: all .15s linear;
+    color: $color-highlight;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+}
+
+strong {
+    font-weight: 500;
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-/* Structure */
-nav {
+h2 {
+    font-size: 1em;
+    font-weight: 600;
+}
 
+.intro p {
+    font-size: 1.3em;
+    span {
+        display: block;
+        text-align: right;
+        font-style: italic;
+        font-size: .5em;
+        margin: 1em 0;
+    }
+}
+
+/* Structure */
+/*html,
+body {
+    height: 100%;
+}*/
+nav {
+    border-bottom: 3px double $color-base;
+    border-top: 3px double $color-base;
+    padding: .5em 0;
+    margin: 1em 0;
 }
 a.logo {
+    display: block;
+    text-align: center;
     margin: 0 auto;
+}
+section {
+    @include cf();
 }
 
 /* Styling */
@@ -149,13 +188,18 @@ body {
     background: $color-bg;
     background-size: cover;
     color: $color-base;
-    border: 15px solid $gray;
-    padding: 3em 6em;
+    border: 15px solid lighten(#C2BBA9, 25%);
+    padding: .5em 1em;
+    @include breakpoint($bp-small){
+        padding: 1.5em 3em;
+    }
+    @include breakpoint($bp-medium){
+        padding: 3em 6em;
+    }
 }
 
 header {
     @include cf();
-    border-bottom: 3px double $color-highlight;
 }
 
 a.logo {
@@ -164,11 +208,11 @@ a.logo {
     color: $color-base;
 }
 
-/* Navgation */
+/* Navigation */
 nav {
     ul {
         @include listreset();
-        text-align: right;
+        text-align: center;
         li {
             display: inline-block;
             margin-left: .7em;
@@ -180,14 +224,82 @@ nav {
         font-size: .7em;
         font-weight: 400;
         text-transform: uppercase;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: $color-highlight;
+        }
     }
 }
 
+/* Footer */
+footer {
+    font: 300 .7em/1.2 Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    text-align: center;
+    border-top: 1px solid $color-base;
+    padding-top: 1em;
+    margin-top: 2em;
+}
 
 
+/* Overview */
+.overview {
+    @include breakpoint($bp-medium){
+        margin: 0 -10px;
+    }   
+    article {
+        @include breakpoint($bp-medium){
+            width: 50%;
+            float: left;
+            padding: 0 10px 20px;
+        }
+        @include breakpoint($bp-large){
+            width: 33%;
+        }
+        span {
+            background: white;
+            opacity: .8;
+            line-height: 1.2;
+            padding: .2em .5em;
+            position: absolute;
+            z-index: 100;
+        }
+        img {
+            width: 100%;
+            position: relative;
+            z-index: 0;
+        }
+        a {
+            position: relative;
+            display: block;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transition: background .3s linear;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                &:before {
+                    background: $color-highlight;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
 
-
-
+/* Detail */
+.detail {
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
 
 
 
