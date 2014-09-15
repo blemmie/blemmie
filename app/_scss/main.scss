@@ -269,6 +269,7 @@ footer {
             width: 100%;
             position: relative;
             z-index: 0;
+            margin: 1em auto;
         }
         a {
             position: relative;
@@ -277,6 +278,7 @@ footer {
                 content: '';
                 display: block;
                 position: absolute;
+                z-index: 10;
                 width: 100%;
                 height: 100%;
                 transition: background .3s linear;
@@ -286,7 +288,7 @@ footer {
             &:active {
                 &:before {
                     background: $color-highlight;
-                    opacity: .8;
+                    opacity: .7;
                 }
             }
         }
