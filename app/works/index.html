@@ -4,8 +4,7 @@ title : Works
 weight : 2
 ---
 <section class="overview">
-  Only show: print or web
 {% for post in site.categories['works'] %}
-  <article class="{{ post.categories }}"><a href="{{ post.url }}"><span>{{ post.title }}</span><img src="{{ post.img }}" /></a></article>
+  <article class="{{ post.categories | join: ' ' }}"><a href="{{ post.url }}"><span>{{ post.title }}</span><img src="{{ post.img }}" /></a></article>
 {% endfor %}
 </section>

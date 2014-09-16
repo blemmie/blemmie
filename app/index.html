@@ -6,15 +6,15 @@ weight: 1
 <section class="home intro">
   <p>Blemmie, Blemmyes (Βλέμυες; Blemmyae) people said to have no head, their eyes and mouth being placed in the breast. <span>(See ACEPHALITES; CAORA.)</span></p>
 </section>
-<section class="home posts works">
+<section class="home posts works overview">
   <h1>Latest work</h1>
-  {% for post in site.categories['works'] %}
-    <article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
+  {% for post in site.categories['works'] limit:3 %}
+    <article><a href="{{ post.url }}"><img src="{{ post.img }}" /></a></article>
   {% endfor %}
 </section>
 <section class="home posts blog">
   <h1>Latest Posts</h1>
   {% for post in site.categories['blog'] %}
-    <article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
+    <article><time>{{ post.date | date_to_string }}</time>{{ post.excerpt }}<a href="{{ post.url }}">{{ post.title }}</a></article>
   {% endfor %}
 </section>
