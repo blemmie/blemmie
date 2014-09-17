@@ -116,7 +116,7 @@ font-family: 'Titillium Web', sans-serif;
 
 /* Typo */
 body {
-    font: 300 1.5em/1.5 "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font: 300 1.35em/1.5 "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     //font: 400 1em/1.5, Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
@@ -203,7 +203,7 @@ header {
 }
 
 a.logo {
-    font: 300 2em/1.5 Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font: 300 2.2em/1.5 Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
     text-decoration: none;
     color: $color-base;
 }
@@ -221,7 +221,7 @@ nav {
     a {
         text-decoration: none;
         color: $color-base;
-        font-size: .7em;
+        font-size: .8em;
         font-weight: 400;
         text-transform: uppercase;
         &:hover,
@@ -247,17 +247,18 @@ footer {
 .overview {
     @include breakpoint($bp-medium){
         margin: 0 -15px;
-    }   
-    article {
-        @include breakpoint($bp-medium){
+        article {
             width: 50%;
             float: left;
             padding: 0 15px 20px;
         }
-        /*@include breakpoint($bp-large){
+    }
+    @include breakpoint($bp-medium){
+        &.home article {
             width: 33%;
-        }*/
-        font-size: .9em;
+        }
+    }
+    article {
         h2 {
             padding-bottom: 1em;
             border-bottom: 1px solid $color-base;
