@@ -246,25 +246,45 @@ footer {
 /* Overview */
 .overview {
     @include breakpoint($bp-medium){
-        margin: 0 -10px;
+        margin: 0 -15px;
     }   
     article {
         @include breakpoint($bp-medium){
             width: 50%;
             float: left;
-            padding: 0 10px 20px;
+            padding: 0 15px 20px;
         }
-        @include breakpoint($bp-large){
+        /*@include breakpoint($bp-large){
             width: 33%;
+        }*/
+        font-size: .9em;
+        h2 {
+            padding-bottom: 1em;
+            border-bottom: 1px solid $color-base;
         }
-        span {
+        > div {
+            border-bottom: 1px solid $color-base;
+            p {
+                margin: 1em 0 0;
+            }
+        }
+        label {
+            font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+            font-weight: bold;
+            display: inline;
+            + span {
+                display: inline;
+                margin-left: .5em;
+            }
+        }
+        /*span {
             background: white;
             opacity: .8;
             line-height: 1.2;
             padding: .2em .5em;
             position: absolute;
             z-index: 100;
-        }
+        }*/
         img {
             width: 100%;
             position: relative;
@@ -278,7 +298,7 @@ footer {
                 content: '';
                 display: block;
                 position: absolute;
-                z-index: 10;
+                z-index: -1;
                 width: 100%;
                 height: 100%;
                 transition: background .3s linear;
