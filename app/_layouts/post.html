@@ -2,7 +2,8 @@
 layout: default
 ---
 <section class="detail">
-  <article class="post">
+  <article class="post test {{ categories  }}">
   {{ content }}
+  {{ post.categories | join: ' ' }}
   </article>
 </section>
