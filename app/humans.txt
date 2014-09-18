@@ -3,11 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Julie Vanopdenbosch -- design & development -- @blemmie
 
 # THANKS
 
-    <name>
+    [Johan Ronsse](wolfslittlestore.be/) (@wolfr) to tweet about [generator-jekyllrb](https://github.com/robwierzbowski/generator-jekyllrb)
+    [Brenna OBrien](http://brennaobrien.com/) (@brnnbrn) for inspiration for the structure this site
 
 # TECHNOLOGY COLOPHON
 
