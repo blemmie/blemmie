@@ -141,6 +141,10 @@ strong {
     font-weight: 500;
 }
 
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
 h1 {
     font-size: 1.2em;
     font-weight: 600;
@@ -153,13 +157,15 @@ h2 {
 }
 
 .intro p {
-    font-size: 1.3em;
-    //border-bottom: 1px solid $color-base;
+    font-size: 1.1em; 
+    @include breakpoint($bp-small){
+      font-size: 1.3em;  
+    }
     span {
         display: block;
         text-align: right;
         font-style: italic;
-        font-size: .5em;
+        font-size: .6em;
         margin: 1em 0;
     }
 }
@@ -230,7 +236,7 @@ nav {
         text-align: center;
         li {
             display: inline-block;
-            margin-left: .7em;
+            margin: 0 .35em;
         }
     }
     a {
@@ -250,11 +256,18 @@ nav {
 
 /* Footer */
 footer {
-    font: 300 .7em/1.2 Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
     text-align: center;
-    border-top: 1px solid $color-base;
     padding-top: 1em;
     margin-top: 40px;
+    @include breakpoint($bp-small){
+        border-top: 1px solid $color-base;
+        nav {
+            display: none;
+        }
+    }
+    p {
+        font: 300 .7em/1.2 Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    }
 }
 
 
@@ -269,14 +282,16 @@ footer {
         }
     }
     @include breakpoint($bp-medium){
-        &.home article {
+        article {
             width: 33%;
         }
     }
     h1 {
-        margin-left: 15px;
-        margin-right: 15px;
         border-bottom: 1px solid $color-base;
+        @include breakpoint($bp-medium){
+            margin-left: 15px;
+            margin-right: 15px;
+        }
     }
     article {
         h2 a {
