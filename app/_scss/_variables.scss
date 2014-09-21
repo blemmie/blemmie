@@ -1,4 +1,4 @@
-// Colors
+/*Colors*/
 $color-bg: #FFFEFF;
 $color-highlight: /*orange: #FF6800*/ #52EDDB;
 $color-base: #36342F;
@@ -6,8 +6,11 @@ $color-base: #36342F;
 $black: #b4b4b4;
 $gray: #b9bcbd;
 
-// Breakpoints
+/*Breakpoints*/
 $bp-large: 65em;
 $bp-medium: 50em;
 $bp-small: 40em;
 $bp-mini: 30em;
+
+/*Font*/
+$font-base: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
