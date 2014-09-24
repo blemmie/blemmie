@@ -8,7 +8,7 @@ weight : 2
   <article class="{{ post.categories | join: ' ' }}">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <div><label>Type:</label> {{ post.discipline | join: ', ' }}</div>
-    <a href="{{ post.url }}" class="hover"><img src="{{ post.img }}" /></a>
+    <a href="{{ post.url }}" class="hover"><img src="{{ site.url }}{{ post.img }}" /></a>
   </article>
 {% endfor %}
 </section>

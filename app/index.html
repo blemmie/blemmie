@@ -9,7 +9,7 @@ weight: 1
 <section class="home posts works overview">
   <h1>Latest work</h1>
   {% for post in site.categories['works'] limit:3 %}
-    <article><a href="{{ post.url }}" class="hover"><img src="{{ post.img }}" /></a></article>
+    <article><a href="{{ post.url }}" class="hover"><img src="{{ site.url }}{{ post.img }}" /></a></article>
   {% endfor %}
 </section>
 <section class="home posts blog overview">
