@@ -2,6 +2,7 @@
 layout: post
 title:  "Mission statement: strip it down"
 categories: blog
+date: 2014-09-21
 ---
 
 # Mission statement: strip it down
@@ -16,5 +17,5 @@ I'm not a sucker for new frameworks, new tools, new design trends... I like to k
 
 This way of thinking and working has sometimes given me the feeling that my 'keeping it simple' might be considered as just being lazy, as if I don't want to make the effort to try out every new thing. It even got me thinking I might be getting too old for the job. Discovering that more people have the need to take things back to basics, to take it simple on all levels, made me realise that I'm not alone, I'm not lazy, I'm not getting too old. Instead, that's what experience gives you. I know why I do something the way I do it. It has grown over many years and has proven it's efficiency and is still evolving every day. 'Keeping it simple' helps me keep focus on what is really important; a user finding what he/she might be looking for, in a direct and comfortable way, whithout losing sight on esthetics. And me having my fitting way to make these experiences with the same joy I've had since the very start.
 
-The core of every project is to always strip things down. I decided to make a minor statement and see how far I could go in making this redesign. Frank Chimero once jokingly tweeted "next time I make a site only in Times New Roman and 1 column." as a response to the struggling that responsive design sometimes brings. This tweet had struck a fine chord with me and I decided to take it on. I used no external assets or as little as possible and to still create something that's me. And the result is what you're looking at.
+The core of every project is to always strip things down. I decided to make a minor statement and see how far I could go in making this redesign. Frank Chimero once jokingly tweeted "next time I make a site only in Times New Roman and 1 column." as a response to the struggling that responsive design sometimes brings. This tweet had struck a fine chord with me and I decided to take it on. I used no external assets or as little as possible to create something that's still 'me'.
 

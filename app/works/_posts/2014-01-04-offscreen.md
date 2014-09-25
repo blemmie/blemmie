@@ -11,4 +11,4 @@ img: /img/works/web/offscreen.png
 ##responsive design and drupal theming for Offscreen film festival
 Offscreen is a yearly film festival in Brussels, Belgium. They focus on movies for lovers of the unusual and nonconformist: B-movies, cult, camp or trash, exploitation and underground cinema. Apart from the yearly festival, they have continuous monthly programm at the Cinematek and organise other smaller events.
 I was asked to redesign their website, to make it more clear and to-the-point and off course mobile-friendly. Apart from the design I did the front-end drupal theming.
-[<img src="{{ site.url }}/img/works/web/offscreen.png">](http://http://www.offscreen.be/)
+[<img src="{{ site.url }}/img/works/web/offscreen.png">](http://www.offscreen.be/)
