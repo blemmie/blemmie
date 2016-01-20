@@ -264,6 +264,7 @@ body {
     background-size: cover;
     color: $color-base;
     border: 15px solid lighten(#C2BBA9, 25%);
+    margin: 0;
 }
 
 .container {
@@ -323,7 +324,7 @@ nav {
         text-align: center;
         li {
             display: inline-block;
-            margin: 0 8px;
+            margin: 0 1em;
         }
     }
     a {
@@ -360,41 +361,8 @@ footer {
 
 /* Overview */
 .overview {
-    @include breakpoint($bp-small){
-        margin: 0 -15px;
-        article {
-            width: 50%;
-            float: left;
-            padding: 0 15px 20px;
-        }
-    }
-    @include breakpoint($bp-medium){
-        margin: 0 -20px;
-        article {
-            padding: 0 20px 25px;
-        }
-    }
-    @include breakpoint($bp-large){
-        margin: 0 -30px;
-        article {
-            width: 33%;
-            padding: 0 30px 35px;
-        }
-    }
     h1 {
-        border-bottom: 1px solid $color-base;
-        @include breakpoint($bp-small){
-            margin-left: 15px;
-            margin-right: 15px;
-        }
-        @include breakpoint($bp-medium){
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        @include breakpoint($bp-large){
-            margin-left: 30px;
-            margin-right: 30px;
-        }
+       border-bottom: 1px solid $color-base; 
     }
     article {
         h2 a {
@@ -446,6 +414,55 @@ footer {
             }
         }
     }
+    &.works {
+        @include breakpoint($bp-small){
+            margin: 0 -15px;
+            article {
+                width: 50%;
+                float: left;
+                padding: 0 15px 20px;
+            }
+        }
+        @include breakpoint($bp-medium){
+            margin: 0 -20px;
+            article {
+                padding: 0 20px 25px;
+            }
+        }
+        @include breakpoint($bp-large){
+            margin: 0 -30px;
+            article {
+                width: 33.333%;
+                padding: 0 30px 35px;
+            }
+        }
+        h1 {
+            
+            @include breakpoint($bp-small){
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            @include breakpoint($bp-medium){
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            @include breakpoint($bp-large){
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
+    }
+    &.blog {
+        ul {
+            @include listreset();
+        }
+        article {
+           width: 100%; 
+        }
+        time {
+            margin-right: 20px;
+        }
+    }
 }
 
 /* Detail */
@@ -470,14 +487,7 @@ footer {
 }
 
 /* Home */
-.overview.blog {
-    article {
-       width: 100%; 
-    }
-    time {
-        margin-right: 20px;
-    }
-}
+.overview
 
 
 
